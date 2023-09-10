@@ -1,0 +1,42 @@
+<html>
+    <head>
+<title>flex</title>
+    </head>
+    <style>
+       .main-container {
+    display: flex;
+    justify-content: space-between; /* To position containers side by side */
+}
+
+.subchild-container {
+    flex-basis: 70%; /* Take up half of the available space */
+}
+
+.side-container {
+    flex-basis: 50%; /* Take up half of the available space */
+}
+
+/* Optional: Add styles to individual divs within the containers */
+.main-container div {
+    margin: 10px; /* Add spacing between the divs */
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+
+    </style>
+    <body>
+        <div class="main-container">
+            <div class="subchild-container">
+                <div>1Lorem ipsum dolor sit, amet consectetur adipisicing elit...</div>
+                <div>2Lorem ipsum dolor sit amet consectetur adipisicing elit...</div>
+            </div>
+            <div class="side-container">
+                <div>3Lorem ipsum dolor sit amet consectetur adipisicing elit...</div>
+                <div>4Lorem ipsum dolor sit amet consectetur adipisicing elit...</div>
+            </div>
+        </div>
+        
+        
+    </body>
+</html>
